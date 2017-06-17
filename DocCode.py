@@ -1,11 +1,10 @@
-# Explain line by line what does each line do.
-# Answer question (the questions are about the lines directly below them)
+# Giải thích từng dòng
+# Đồng thời, trả lời các câu hỏi trong comment (liên quan đến dòng ngay dưới)
 import numpy as np
 from random import random
 
 
 class Randomizer():
-    # Why self?
     def __init__(self, size = 10):
         self.size = size
 
@@ -15,7 +14,7 @@ class Randomizer():
         return ret
 
     @staticmethod
-    # Why no self? What is a static method anyway?
+    # Tại sao không có self? Static method là gì?
     def get_random_number():
         return random()
 
@@ -23,18 +22,22 @@ class Randomizer():
 
 randomizer = Randomizer(15)
 
-# What does this line of code do?
+# Dòng này in gì và tại sao? (Chỉ cần nói ý tưởng, không cần nói đáp án cụ thể)
 print(randomizer.randomize())
 
 a = np.array([1, 2, 3])
 b = np.array([[1, 2, 3],[1, 4, 5],[1, 2, 6]])
 
+# Kết quả phép tính này là gì? Giải thích?
 print(np.matmul(b, a))
 
+# Ý nghĩa của dòng này?
 for i, X in enumerate(a):
     print(a[i])
-# What does this code do? Explain?
+
+# Dòng này in gì và tại sao?
 print(b[1 : : , : : -2 ])
 
+# Dòng này in gì và tại sao?
 print(sum(filter(lambda x : x%3 == 0, [1, 2, 3, 4, 5, 6])))
 
