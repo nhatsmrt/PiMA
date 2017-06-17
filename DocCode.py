@@ -15,7 +15,7 @@ class Randomizer():
         return ret
 
     @staticmethod
-    # Why no self?
+    # Why no self? What is a static method anyway?
     def get_random_number():
         return random()
 
